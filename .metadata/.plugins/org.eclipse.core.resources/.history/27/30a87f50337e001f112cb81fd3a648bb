@@ -1,0 +1,11 @@
+package coom.srtf.utilities;
+
+public class ConfigDataProviders {
+
+	public ConfigDataProviders () {
+		
+		File src = new ConfigDataProviders();
+	}
+	
+	
+}

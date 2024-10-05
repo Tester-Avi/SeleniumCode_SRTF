@@ -1,0 +1,20 @@
+package com.srtf.testcases;
+
+import org.testng.annotations.Test;
+
+import com.srtf.pageobjects.BaseTest;
+
+public class TestCaseDemo extends BaseTest {
+
+	@Test
+	void testCheck () {
+	
+		BaseTest btObj = new BaseTest();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

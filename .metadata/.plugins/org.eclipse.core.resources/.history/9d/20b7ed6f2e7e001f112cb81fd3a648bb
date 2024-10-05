@@ -1,0 +1,31 @@
+package coom.srtf.utilities;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class BrowserFactory {
+
+	
+	public static WebDriver startApplication (WebDriver driver, String browserName,String appUrl) {
+		
+		
+		if (browserName="chrome") {
+
+			System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+			ChromeOptions co = new ChromeOptions();
+			co.addArguments("--remote-allow-origins=*");
+			
+			driver = new ChromeDriver();
+		}
+
+		
+		
+		
+		
+		return driver;
+		
+	}
+	
+	
+}

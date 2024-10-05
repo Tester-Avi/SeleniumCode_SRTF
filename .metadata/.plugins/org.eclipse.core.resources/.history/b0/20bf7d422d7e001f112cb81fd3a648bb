@@ -1,0 +1,11 @@
+package coom.srtf.utilities;
+
+public class BrowserFactory {
+
+	
+	public static WebDriver startApplication(WebDriver driver) {
+		
+	}
+	
+	
+}

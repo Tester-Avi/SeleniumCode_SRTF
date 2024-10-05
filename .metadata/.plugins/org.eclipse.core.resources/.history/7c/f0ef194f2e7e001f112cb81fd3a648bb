@@ -1,0 +1,22 @@
+package coom.srtf.utilities;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class BrowserFactory {
+
+	
+	public static WebDriver startApplication (WebDriver driver) {
+		
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		ChromeOptions co = new ChromeOptions();
+		
+		
+		
+		
+		return driver;
+		
+	}
+	
+	
+}

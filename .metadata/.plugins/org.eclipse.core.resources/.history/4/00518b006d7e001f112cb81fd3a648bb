@@ -1,0 +1,27 @@
+package com.srtf.pageobjects;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
+
+import com.srtf.utilities.BrowserFactory;
+import com.srtf.utilities.ConfigDataProviders;
+
+public class BaseTest {
+
+	public WebDriver driver;
+	public ConfigDataProviders config;
+
+
+
+	@BeforeClass
+	public void setUp(){
+		driver = BrowserFactory.startApplication(driver,config.getBrowser(),config.getStagingUrl()); 
+	}
+
+
+	@AfterClass
+	public void tearDown() {
+		BrowserFactory.quitBrowser(driver);
+	}
+
+}

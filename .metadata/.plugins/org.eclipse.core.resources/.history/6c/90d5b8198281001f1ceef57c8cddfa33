@@ -1,0 +1,9 @@
+package com.srtf.pageobjects;
+
+public class SearchPage {
+		
+	public SearchPage ( ) {
+		
+		this.driver = ldriver;
+	}
+}

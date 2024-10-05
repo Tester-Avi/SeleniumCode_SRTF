@@ -1,0 +1,14 @@
+package coom.srtf.utilities;
+
+import org.openqa.selenium.WebDriver;
+
+public class BrowserFactory {
+
+	
+	public static WebDriver startApplication (WebDriver driver) {
+		return driver;
+		
+	}
+	
+	
+}

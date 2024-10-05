@@ -1,0 +1,22 @@
+package com.srtf.utilities;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+
+public class ITestListenerClass implements ITestListener {
+
+	public void configureReport() {
+
+
+	}
+
+	
+	// On Start method is called, when any Test Starts.
+	public void onStart(ITestContext Result) {
+		configureReport();
+
+	}
+}
+
+
+)

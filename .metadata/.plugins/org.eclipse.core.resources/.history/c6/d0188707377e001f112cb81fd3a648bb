@@ -1,0 +1,26 @@
+package com.srtf.pageobjects;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
+
+import coom.srtf.utilities.BrowserFactory;
+import coom.srtf.utilities.ConfigDataProviders;
+import coom.srtf.utilities.ReadExcelFile;
+
+public class BaseTest {
+
+	WebDriver driver;
+	ConfigDataProviders config;
+
+
+
+	@BeforeClass
+	public void setUp(){
+		driver = BrowserFactory.startApplication(driver,config.getBrowser(), config.getStagingUrl()); 
+	}
+
+public void tearDown() {
+	BrowserFactory.quitBrowser(driver);
+}
+
+}
